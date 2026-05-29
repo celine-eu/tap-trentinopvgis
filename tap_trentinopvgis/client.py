@@ -58,10 +58,7 @@ class TrentinoPvGisStream(RESTStream):
     def url_base(self) -> str:
         return PROXY_BASE
 
-    @property
-    @override
-    def path(self) -> str:
-        return PROXY_PATH
+    path = PROXY_PATH
 
     @property
     def inner_wfs_url(self) -> str:
